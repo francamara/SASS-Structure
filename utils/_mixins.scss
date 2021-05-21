@@ -1,0 +1,16 @@
+// JUST A FEW EXMAPLES, BUT PERSONALLY I USE THEM IN EVERYP PROJECT
+
+$breakpoint-mobile: 1000px;
+
+@mixin media-query-desktop {
+  @media screen and (min-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin flex($justify-content, $flex-direction) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+  flex-direction: $flex-direction;
+}

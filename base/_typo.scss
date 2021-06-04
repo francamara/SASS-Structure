@@ -1,44 +1,46 @@
 // --------------------------------------------------------------------------------
 
-// EVERYTHING FROM HERE SHOULD BE MODIFIED, BUT THIS IS A BASIC TEMPLATE YOU CAN USE
+// VARIABLES SHOULD BE MODIFIED AT YOUR DESIRED REQUIREMENTS
 
 // --------------------------------------------------------------------------------
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;700&display=swap');
 
-$font-montserrat: 'Montserrat', sans-serif;
+// REPLACE MONTSERRAT WITH THE FONT YOU WANT TO USE
+$font-main: 'Montserrat', sans-serif;
 
-@mixin font-montserrat-bold {
-  font-family: $font-montserrat;
+@mixin font-main-bold {
+  font-family: $font-main;
   font-weight: 700;
 }
 
-@mixin font-montserrat-medium {
-  font-family: $font-montserrat;
+@mixin font-main-medium {
+  font-family: $font-main;
   font-weight: 500;
 }
 
-$font-roboto: 'Roboto', sans-serif;
+// REPLACE ROBOTO WITH THE FONT YOU WANT TO USE
+$font-secondary: 'Roboto', sans-serif;
 
-@mixin font-roboto-regular {
-  font-family: $font-roboto;
+@mixin font-secondary-regular {
+  font-family: $font-secondary;
   font-weight: 400;
 }
 
-@mixin font-roboto-bold {
-  font-family: $font-roboto;
+@mixin font-secondary-bold {
+  font-family: $font-secondary;
   font-weight: 700;
 }
 
 @mixin title($font-size) {
-  @include font-montserrat-bold();
+  @include font-main-bold();
   color: $main-color;
   font-size: $font-size;
   line-height: 50px;
 }
 
 @mixin text($font-size) {
-  @include font-roboto-regular();
+  @include font-secondary-regular();
   font-size: ($font-size);
   line-height: 23px;
   color: $black-color;
